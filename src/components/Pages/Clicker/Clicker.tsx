@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./Clicker.css"
 
-const Clicker = () => {
-  const [click, setClick] = useState(0);
+const Clicker: React.FC = () => {
+  const [click, setClick] = useState<number>(0);
 
-  const plusClick = () => {
+  const plusClick: React.MouseEventHandler<HTMLButtonElement> = () => {
     setClick(click + 1);
   }
 
-  const minusClick = () => {
+  const minusClick: React.MouseEventHandler<HTMLButtonElement> = () => {
     setClick(click - 1);
   }
 
