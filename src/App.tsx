@@ -35,17 +35,10 @@ function App() {
             <Clicker />
           </>} />
           <Route path="/pointer/*" element={<>
-            <Pointer number={0} />
+            <Pointer title="any str" number={0} />
           </>} />
           <Route path="/profiles/*" element={<>
-            <Profiles
-              render={(profile, i) => (
-                <>
-                  <p>{profile.name}</p>
-                  <p>{profile.age}</p>
-                </>
-              )}
-              profiles={Profile} />
+            <Profiles profiles={Profile} />
           </>} />
         </Routes>
       </div>
