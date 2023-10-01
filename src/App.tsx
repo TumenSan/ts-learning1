@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Pages/Home/Home";
 import About from "./components/Pages/About/About";
 import Clicker from "./components/Pages/Clicker/Clicker";
+import Pointer from "./components/Pages/Pointer/Pointer";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </>} />
           <Route path="/clicker/*" element={<>
             <Clicker />
+          </>} />
+          <Route path="/pointer/*" element={<>
+            <Pointer number={0} />
           </>} />
         </Routes>
       </div>
