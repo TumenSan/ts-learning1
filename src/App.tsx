@@ -7,6 +7,7 @@ import About from "./components/Pages/About/About";
 import Clicker from "./components/Pages/Clicker/Clicker";
 import Pointer from "./components/Pages/Pointer/Pointer";
 import Profiles from "./components/Pages/Profiles/Profiles";
+import UserList from "./components/UserList";
 
 interface ProfileType {
   name: string
@@ -39,6 +40,9 @@ function App() {
           </>} />
           <Route path="/profiles/*" element={<>
             <Profiles profiles={Profile} />
+          </>} />
+          <Route path="/userlist/*" element={<>
+            <UserList />
           </>} />
         </Routes>
       </div>
