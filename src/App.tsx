@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <div className="block rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700 dark:text-neutral-50">Hello world</div>
+        <div className="block rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700 dark:text-neutral-50 text-green-700 border-t-2 border-b my-5">Hello world</div>
         <div className="container w-80 mt-5 mx-auto bg-green-200 rounded-xl shadow">
          <div className="text-3xl p-8 text-green-700 font-bold mb-5">
            Welcome!
