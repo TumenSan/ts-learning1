@@ -38,7 +38,7 @@ function Profiles(props: ProfilesProps) {
         <Text>Some text</Text>
       </Container>
       {props.profiles.map((profile, i) => (
-        <div key={i}>
+        <div key={i} className="my-3 border border-2 border-red-500 mx-auto rounded-xl w-[500px]">
           <p>{profile.name}</p>
           <p>{profile.age}</p>
         </div>

@@ -14,12 +14,14 @@ const Clicker: React.FC = () => {
 
   return(
     <div className="CLicker">
-      <button
+      <button 
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
         type="button"
         onClick={plusClick}
       >+</button>
       {click}
       <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4"
         type="button"
         onClick={minusClick}
       >-</button>

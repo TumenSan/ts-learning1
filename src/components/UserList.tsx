@@ -27,7 +27,10 @@ const UserList: React.FC = () => {
   return (
     <div>
       {users.map(user => 
-        <div key={user.id}>{user.name}</div>
+        <div 
+          key={user.id}
+          className="border border-2 rounded-xl my-3 mx-auto w-[500px]">
+            {user.name}</div>
       )}
     </div>
   );
