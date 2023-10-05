@@ -8,6 +8,7 @@ import Clicker from "./components/Pages/Clicker/Clicker";
 import Pointer from "./components/Pages/Pointer/Pointer";
 import Profiles from "./components/Pages/Profiles/Profiles";
 import UserList from "./components/UserList";
+import FirstLesson from "./components/Pages/FirstLesson/FirstLesson";
 
 interface ProfileType {
   name: string
@@ -52,6 +53,9 @@ function App() {
           </>} />
           <Route path="/userlist/*" element={<>
             <UserList />
+          </>} />
+          <Route path="/firstlesson/*" element={<>
+            <FirstLesson />
           </>} />
         </Routes>
       </div>

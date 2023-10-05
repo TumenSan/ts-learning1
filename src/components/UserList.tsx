@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import {useSelector} from "react-redux";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 //import { useDispatch } from "react-redux";
@@ -16,17 +16,13 @@ const UserList: React.FC = () => {
     console.log(users)
   }, [])
 
-  if (loading) {
-    return <h1>Идет загрузка...</h1>
-  }
-
-  if (error) {
-    return <h1>{error}</h1>
-  }
+  const cachedUsers = useMemo(() => users, [users]);
 
   return (
     <div>
-      {users.map(user => 
+      {loading && <h1>Идет загрузка...</h1>}
+      {error && <h1>{error}</h1>}
+      {cachedUsers.map(user => 
         <div 
           key={user.id}
           className="border border-2 rounded-xl my-3 mx-auto w-[500px]">
